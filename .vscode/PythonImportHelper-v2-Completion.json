@@ -1,0 +1,94 @@
+[
+    {
+        "label": "csv",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "csv",
+        "description": "csv",
+        "detail": "csv",
+        "documentation": {}
+    },
+    {
+        "label": "webdriver",
+        "importPath": "selenium",
+        "description": "selenium",
+        "isExtraImport": true,
+        "detail": "selenium",
+        "documentation": {}
+    },
+    {
+        "label": "WebDriverWait",
+        "importPath": "selenium.webdriver.support.ui",
+        "description": "selenium.webdriver.support.ui",
+        "isExtraImport": true,
+        "detail": "selenium.webdriver.support.ui",
+        "documentation": {}
+    },
+    {
+        "label": "expected_conditions",
+        "importPath": "selenium.webdriver.support",
+        "description": "selenium.webdriver.support",
+        "isExtraImport": true,
+        "detail": "selenium.webdriver.support",
+        "documentation": {}
+    },
+    {
+        "label": "By",
+        "importPath": "selenium.webdriver.common.by",
+        "description": "selenium.webdriver.common.by",
+        "isExtraImport": true,
+        "detail": "selenium.webdriver.common.by",
+        "documentation": {}
+    },
+    {
+        "label": "TimeoutException",
+        "importPath": "selenium.common.exceptions",
+        "description": "selenium.common.exceptions",
+        "isExtraImport": true,
+        "detail": "selenium.common.exceptions",
+        "documentation": {}
+    },
+    {
+        "label": "NoSuchElementException",
+        "importPath": "selenium.common.exceptions",
+        "description": "selenium.common.exceptions",
+        "isExtraImport": true,
+        "detail": "selenium.common.exceptions",
+        "documentation": {}
+    },
+    {
+        "label": "Options",
+        "importPath": "selenium.webdriver.chrome.options",
+        "description": "selenium.webdriver.chrome.options",
+        "isExtraImport": true,
+        "detail": "selenium.webdriver.chrome.options",
+        "documentation": {}
+    },
+    {
+        "label": "YelloScraper",
+        "kind": 6,
+        "importPath": "yello_ae_program",
+        "description": "yello_ae_program",
+        "peekOfCode": "class YelloScraper:\n    base_url = 'https://www.yello.ae'\n    def __init__(self):\n        # Open CSV file to write data\n        self.csv_file = open('scraped_data.csv', mode='w', newline='', encoding='utf-8')\n        self.csv_writer = csv.DictWriter(self.csv_file, fieldnames=[\n            'company_name', 'company_tag', 'location', 'phone', 'mobile',\n            'website', 'establishment_year', 'employees', 'company_manager'\n        ])\n        # Write the CSV headers",
+        "detail": "yello_ae_program",
+        "documentation": {}
+    },
+    {
+        "label": "chrome_options",
+        "kind": 5,
+        "importPath": "yello_ae_program",
+        "description": "yello_ae_program",
+        "peekOfCode": "chrome_options = Options()\nchrome_options.add_argument(\"--disable-gpu\")\nchrome_options.add_argument(\"--no-sandbox\")\nchrome_options.add_argument(\"--disable-javascript\")  # Disable JavaScript\ndriver = webdriver.Chrome(options=chrome_options)\nclass YelloScraper:\n    base_url = 'https://www.yello.ae'\n    def __init__(self):\n        # Open CSV file to write data\n        self.csv_file = open('scraped_data.csv', mode='w', newline='', encoding='utf-8')",
+        "detail": "yello_ae_program",
+        "documentation": {}
+    },
+    {
+        "label": "driver",
+        "kind": 5,
+        "importPath": "yello_ae_program",
+        "description": "yello_ae_program",
+        "peekOfCode": "driver = webdriver.Chrome(options=chrome_options)\nclass YelloScraper:\n    base_url = 'https://www.yello.ae'\n    def __init__(self):\n        # Open CSV file to write data\n        self.csv_file = open('scraped_data.csv', mode='w', newline='', encoding='utf-8')\n        self.csv_writer = csv.DictWriter(self.csv_file, fieldnames=[\n            'company_name', 'company_tag', 'location', 'phone', 'mobile',\n            'website', 'establishment_year', 'employees', 'company_manager'\n        ])",
+        "detail": "yello_ae_program",
+        "documentation": {}
+    }
+]
